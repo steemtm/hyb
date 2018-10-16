@@ -10,9 +10,10 @@ const SteemBot = require('steem-bot').default;
 
 const username = 'hybridbot';
 const postingKey = 'Your Posting Key Here!'; // Use environment variables instead of hardcoding to be safer
+const activeKey = 'Your Active Key Here!';
 
 const targetUsers = ['spydo', 'redlambo', 'peacebot', 'honestbot', 'votejar', 'bodzila', 'mercurybot','ptbot', 'msp-bidbot', 'stef', 'minnowvotes'];
-const bot = new SteemBot({username, postingKey});
+const bot = new SteemBot({username, postingKey, activeKey});
 
 bot.onDeposit(targetUsers, handleDeposit);
 
