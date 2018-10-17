@@ -22,6 +22,7 @@ function handleDeposit(data, responder) {
   console.log(data.memo);
 
   Responder.sendSteem(0.001, '@hybridbot service is now live, send at least 0.010 SBD or STEEM to @hybridbot with the post you want upvoted as the memo. 0.050 SBD or STEEM max bid. Delegate 100 SP to unlock automatic upvotes and get daily payouts!');  
+    console.log('Promo message sent to %s!', data.from);
   // you get the money now give your service to user
 }
 
